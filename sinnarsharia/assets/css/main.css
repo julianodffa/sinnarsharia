@@ -1,0 +1,141 @@
+body {
+    background: rgb(1, 1, 73);
+    background: linear-gradient(90deg, rgba(35,70,112,1) 5%, rgba(113,213,189,1) 100%);
+    font-family: 'Roboto', Times, serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.navbar {
+    border-bottom: 1px solid rgba(230, 230, 240, 0.25);
+    margin-top: 0px;
+}
+
+.navbar-brand .navbar-brand-img {
+    width: 120px;
+}
+
+.nav-btn {
+    margin-top: 5px;
+    background-color: rgba(24, 55, 102, 1);
+    color: white;
+    border-radius: 3px;
+    border: none;
+    padding: 5px 20px 5px 20px;
+}
+
+@media (min-width: 576px) {
+    .nav-link {
+        margin-top: 33px;
+    }
+
+    .nav-link:hover {
+        color: white;
+    }
+
+    .navbar-nav {
+        margin-right: 10px;
+    }
+
+    .nav-btn {
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-right: 30px;
+    }
+}
+
+/* Animation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: lightgray;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(24, 55, 102, 1);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(107, 201, 182, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(70, 118, 189)
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(24, 55, 102, 1);
+}
+
+/* Logo Sharia */
+.logo-sharia img {
+    width: 100%;
+}
+
+/* Button Head of Section */
+.button-head-of-section {
+    background: linear-gradient(90deg, rgb(13, 37, 70) 30%, rgb(28, 20, 126) 100%);
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    padding: 0px 15px 0px 15px;
+    font-size: larger;
+}
+
+/* Section Logo */
+.logo-section img {
+    width: 150px;
+}
+
+.card.card-visi {
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(38,51,85,1) 5%, rgba(45,89,118,1) 100%);
+}
+
+.card.card-misi {
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(53,80,101,1) 5%, rgba(60,116,133,1) 100%);
+}
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    height: 100%;
+}
+
+.bg-footer {
+    background: rgba(99,187,173,255);
+}
+
+.text-footer {
+    color: rgb(0, 0, 63);
+}
